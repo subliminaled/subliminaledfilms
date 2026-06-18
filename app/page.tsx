@@ -169,11 +169,8 @@ export default function Home() {
             ))}
           </div>
         </div>
-        <Link
-          href={developmentProjects[0]?.ctaHref ?? "/in-development"}
-          className={`mt-10 ${buttonClass}`}
-        >
-          {developmentProjects[0]?.ctaLabel ?? "View development slate"}
+        <Link href="/in-development" className={`mt-10 ${buttonClass}`}>
+          View development slate
         </Link>
       </section>
 
