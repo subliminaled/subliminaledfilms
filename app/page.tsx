@@ -1,10 +1,10 @@
 import Link from "next/link";
 import {
-  developmentProjects,
   featuredProject,
   selectedFilms,
-  type FilmCard,
+  type Film,
 } from "@/data/films";
+import { developmentProjects } from "@/data/developmentProjects";
 
 const buttonClass =
   "inline-flex items-center justify-center border border-amber-100/30 px-6 py-3 text-xs font-semibold uppercase tracking-[0.28em] text-stone-100 transition hover:border-amber-100/70 hover:bg-amber-100/10";
@@ -32,7 +32,7 @@ function CinematicStill({
   );
 }
 
-function FilmCard({ film }: { film: FilmCard }) {
+function FilmCard({ film }: { film: Film }) {
   return (
     <article className="group">
       <CinematicStill
@@ -44,14 +44,16 @@ function FilmCard({ film }: { film: FilmCard }) {
           <h3 className="text-2xl tracking-[-0.03em] text-stone-50">
             {film.title}
           </h3>
-          <p className="mt-2 text-sm text-stone-500">{film.role}</p>
+          <p className="mt-2 text-sm text-stone-500">
+            {film.roles.join(" / ")}
+          </p>
         </div>
         <p className="text-xs uppercase tracking-[0.22em] text-stone-500">
           {film.year}
         </p>
       </div>
       <p className="mt-4 text-xs uppercase tracking-[0.22em] text-amber-100/60">
-        {film.genreStatus}
+        {film.genre} — {film.status}
       </p>
     </article>
   );
@@ -92,13 +94,18 @@ export default function Home() {
               {featuredProject.title}
             </h2>
             <div className="mt-6 flex flex-wrap gap-x-5 gap-y-2 text-xs uppercase tracking-[0.24em] text-stone-500">
-              <span>{featuredProject.label}</span>
+              <span>
+                {featuredProject.genre} — {featuredProject.status}
+              </span>
               <span>{featuredProject.runtime}</span>
             </div>
             <p className="mt-8 max-w-xl text-lg leading-8 text-stone-300">
-              {featuredProject.description}
+              {featuredProject.logline}
             </p>
-            <Link href={featuredProject.href} className={`mt-10 ${buttonClass}`}>
+            <Link
+              href={`/films/${featuredProject.slug}`}
+              className={`mt-10 ${buttonClass}`}
+            >
               View project
             </Link>
           </div>
@@ -162,8 +169,11 @@ export default function Home() {
             ))}
           </div>
         </div>
-        <Link href="/in-development" className={`mt-10 ${buttonClass}`}>
-          View development slate
+        <Link
+          href={developmentProjects[0]?.ctaHref ?? "/in-development"}
+          className={`mt-10 ${buttonClass}`}
+        >
+          {developmentProjects[0]?.ctaLabel ?? "View development slate"}
         </Link>
       </section>
 
