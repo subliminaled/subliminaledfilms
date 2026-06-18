@@ -60,7 +60,10 @@ function FilmCard({ film }: { film: FilmCard }) {
 export default function Home() {
   return (
     <div className="mx-auto w-full max-w-6xl px-6 pb-24 pt-10 sm:px-8">
-      <section className="grid min-h-[72vh] items-end gap-12 py-16 lg:grid-cols-[0.95fr_1.05fr] lg:gap-16">
+      <section
+        id="hero"
+        className="grid min-h-[72vh] items-end gap-12 py-16 lg:grid-cols-[0.95fr_1.05fr] lg:gap-16"
+      >
         <div>
           <p className="mb-5 text-xs font-medium uppercase tracking-[0.42em] text-amber-200/70">
             Independent Narrative Films
@@ -79,7 +82,7 @@ export default function Home() {
         />
       </section>
 
-      <section className="border-t border-white/10 py-20">
+      <section id="featured-project" className="border-t border-white/10 py-20">
         <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
           <div>
             <p className="text-xs uppercase tracking-[0.34em] text-amber-100/60">
@@ -106,7 +109,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="border-t border-white/10 py-20">
+      <section id="selected-films" className="border-t border-white/10 py-20">
         <div className="mb-10 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
           <div>
             <p className="text-xs uppercase tracking-[0.34em] text-amber-100/60">
@@ -130,7 +133,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="border-t border-white/10 py-20">
+      <section
+        id="in-development-preview"
+        className="border-t border-white/10 py-20"
+      >
         <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:items-end">
           <div>
             <p className="text-xs uppercase tracking-[0.34em] text-amber-100/60">
@@ -161,7 +167,7 @@ export default function Home() {
         </Link>
       </section>
 
-      <section className="border-t border-white/10 py-20">
+      <section id="contact-cta" className="border-t border-white/10 py-20">
         <div className="max-w-3xl">
           <p className="text-xs uppercase tracking-[0.34em] text-amber-100/60">
             Contact
