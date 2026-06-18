@@ -2,6 +2,12 @@
 
 :root {
   color-scheme: dark;
+  --background: #080806;
+  --foreground: #f4f1eb;
+  --muted: #9f9a91;
+  --font-display: Georgia, "Times New Roman", serif;
+  --font-body: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
 }
 
 * {
@@ -9,20 +15,24 @@
 }
 
 html {
-  background: #070605;
+  background: var(--background);
 }
 
 body {
   min-height: 100vh;
   margin: 0;
   background:
-    radial-gradient(circle at top left, rgba(120, 89, 52, 0.18), transparent 34rem),
-    radial-gradient(circle at bottom right, rgba(255, 255, 255, 0.08), transparent 26rem),
-    #070605;
-  color: #f5f5f4;
-  font-family:
-    Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-    sans-serif;
+    radial-gradient(circle at top left, rgba(132, 112, 83, 0.12), transparent 34rem),
+    radial-gradient(circle at bottom right, rgba(255, 255, 255, 0.055), transparent 28rem),
+    var(--background);
+  color: var(--foreground);
+  font-family: var(--font-body);
+}
+
+h1,
+h2 {
+  font-family: var(--font-display);
+  font-weight: 400;
 }
 
 body::before {
