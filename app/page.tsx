@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { siteConfig } from "@/data/site";
 
 const highlights = [
   "Atmospheric cinema",
@@ -14,7 +13,7 @@ export default function Home() {
         <p className="mb-6 text-xs font-medium uppercase tracking-[0.42em] text-amber-200/70">
           Independent film studio
         </p>
-        <h1 className="max-w-4xl text-6xl font-semibold leading-[0.88] tracking-[-0.07em] text-stone-50 sm:text-8xl lg:text-9xl">
+        <h1 className="max-w-4xl text-6xl leading-[0.9] tracking-[-0.06em] text-stone-50 sm:text-8xl lg:text-9xl">
           Stories held in shadow and light.
         </h1>
         <p className="mt-8 max-w-2xl text-lg leading-8 text-stone-300 sm:text-xl">
@@ -44,20 +43,6 @@ export default function Home() {
         ))}
       </div>
 
-      <nav
-        aria-label="Secondary navigation"
-        className="mt-10 flex flex-wrap gap-x-5 gap-y-3 text-xs uppercase tracking-[0.22em] text-stone-500 md:hidden"
-      >
-        {siteConfig.navigation.map((item) => (
-          <Link
-            key={item.href}
-            href={item.href}
-            className="transition hover:text-stone-100"
-          >
-            {item.label}
-          </Link>
-        ))}
-      </nav>
     </section>
   );
 }
