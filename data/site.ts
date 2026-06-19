@@ -13,9 +13,7 @@ export const siteConfig = {
     { label: "Contact", href: "/contact" },
   ],
   socialLinks: [
-    { label: "Instagram", href: "#" },
-    { label: "Vimeo", href: "#" },
-    { label: "YouTube", href: "#" },
+    { label: "YouTube", href: "https://youtube.com/@subliminaledfilms" },
   ],
 };
 
@@ -48,6 +46,6 @@ export const pages = {
     eyebrow: "Contact",
     title: "Contact",
     description:
-      "For screenings, press, and general inquiries, contact details will be published here soon.",
+      "For general inquiries, collaborators, funding conversations, press, and interviews.",
   },
 } as const;

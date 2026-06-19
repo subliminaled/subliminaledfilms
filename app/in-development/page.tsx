@@ -1,14 +1,16 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { developmentProjects } from "@/data/developmentProjects";
+import { createPageMetadata } from "@/data/metadata";
 import { pages } from "@/data/site";
 
 const page = pages.inDevelopment;
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createPageMetadata({
   title: page.title,
   description: page.description,
-};
+  path: "/in-development",
+});
 
 export default function InDevelopmentPage() {
   return (

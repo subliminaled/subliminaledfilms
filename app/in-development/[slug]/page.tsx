@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { developmentProjects } from "@/data/developmentProjects";
+import { createPageMetadata } from "@/data/metadata";
 
 type DevelopmentProjectPageProps = {
   params: Promise<{
@@ -29,10 +30,11 @@ export async function generateMetadata({
     return {};
   }
 
-  return {
+  return createPageMetadata({
     title: project.title,
     description: project.logline,
-  };
+    path: `/in-development/${project.slug}`,
+  });
 }
 
 export default async function DevelopmentProjectPage({

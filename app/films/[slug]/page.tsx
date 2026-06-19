@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { films } from "@/data/films";
+import { createPageMetadata } from "@/data/metadata";
 
 type FilmPageProps = {
   params: Promise<{
@@ -54,10 +55,11 @@ export async function generateMetadata({
     return {};
   }
 
-  return {
+  return createPageMetadata({
     title: film.title,
     description: film.logline,
-  };
+    path: `/films/${film.slug}`,
+  });
 }
 
 export default async function FilmDetailPage({ params }: FilmPageProps) {

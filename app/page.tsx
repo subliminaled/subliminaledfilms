@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import {
   featuredProject,
@@ -5,9 +6,16 @@ import {
   type Film,
 } from "@/data/films";
 import { developmentProjects } from "@/data/developmentProjects";
+import { createPageMetadata } from "@/data/metadata";
+import { siteConfig } from "@/data/site";
 
 const buttonClass =
   "inline-flex items-center justify-center border border-amber-100/30 px-6 py-3 text-xs font-semibold uppercase tracking-[0.28em] text-stone-100 transition hover:border-amber-100/70 hover:bg-amber-100/10";
+
+export const metadata: Metadata = createPageMetadata({
+  title: "Independent Narrative Films",
+  description: siteConfig.description,
+});
 
 function CinematicStill({
   label,

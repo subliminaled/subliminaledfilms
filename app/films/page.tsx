@@ -1,14 +1,16 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { films } from "@/data/films";
+import { createPageMetadata } from "@/data/metadata";
 import { pages } from "@/data/site";
 
 const page = pages.films;
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createPageMetadata({
   title: page.title,
   description: page.description,
-};
+  path: "/films",
+});
 
 export default function FilmsPage() {
   return (
