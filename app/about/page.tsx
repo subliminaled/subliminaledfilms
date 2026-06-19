@@ -44,7 +44,8 @@ export default function AboutPage() {
         <div className="space-y-8 text-lg leading-8 text-stone-300">
           <p>
             Ed Castañeda is a writer, director, and producer drawn to intimate,
-            real-life stories about flawed people facing the moments they can't
+            real-life stories about flawed people facing the moments they
+            can&apos;t
             control. His work explores mortality, obsession, fear, empathy, and
             the private struggles people carry quietly.
           </p>
