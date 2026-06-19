@@ -54,7 +54,7 @@ export default function FilmsPage() {
               >
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_28%_22%,rgba(245,245,244,0.22),transparent_24rem),linear-gradient(135deg,rgba(120,89,52,0.42),rgba(8,8,6,0.34)_45%,rgba(0,0,0,0.92))]" />
                 <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black/80 to-transparent" />
-                <span className="absolute bottom-5 left-5 right-5 text-[0.65rem] uppercase tracking-[0.22em] text-stone-400">
+                <span className="sr-only">
                   {film.image}
                 </span>
               </div>

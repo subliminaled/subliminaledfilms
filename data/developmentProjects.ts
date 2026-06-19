@@ -24,7 +24,7 @@ export const developmentProjects: DevelopmentProject[] = [
     description:
       "A restrained chamber piece about care, dignity, and family decisions made under pressure.",
     themes: ["End-of-life care", "Family", "Dignity"],
-    image: "Placeholder still of a quiet hospice room at dusk",
+    image: "Quiet hospice room at dusk",
     ctaLabel: "Discuss the film",
     ctaHref: "/contact",
   },
@@ -39,7 +39,7 @@ export const developmentProjects: DevelopmentProject[] = [
     description:
       "An early-stage project container for smaller narrative pieces connected by atmosphere, confession, and transformation.",
     themes: ["Memory", "Transformation", "Secrets"],
-    image: "Placeholder still of moths circling a porch light",
+    image: "Moths circling a porch light",
     ctaLabel: "Ask about the slate",
     ctaHref: "/contact",
   },
@@ -54,7 +54,7 @@ export const developmentProjects: DevelopmentProject[] = [
     description:
       "A character-driven drama about memory, absence, and the emotional cost of starting over.",
     themes: ["Family", "Memory", "Return"],
-    image: "Placeholder still of a woman near a quiet window",
+    image: "A woman near a quiet window",
     ctaLabel: "Discuss the project",
     ctaHref: "/contact",
   },
