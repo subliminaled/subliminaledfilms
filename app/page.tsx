@@ -31,6 +31,8 @@ function CinematicStill({
       className={`relative overflow-hidden border border-white/10 bg-stone-950 ${className}`}
     >
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_28%_22%,rgba(245,245,244,0.22),transparent_24rem),linear-gradient(135deg,rgba(120,89,52,0.42),rgba(8,8,6,0.34)_45%,rgba(0,0,0,0.92))]" />
+      <div className="absolute left-[12%] top-[16%] h-[56%] w-[34%] bg-stone-100/10 blur-sm" />
+      <div className="absolute right-[18%] top-[22%] h-[46%] w-px bg-white/10" />
       <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black/80 to-transparent" />
       <div className="absolute inset-0 bg-[linear-gradient(90deg,transparent,rgba(255,255,255,0.08)_48%,transparent_51%)] opacity-30" />
       <span className="sr-only">

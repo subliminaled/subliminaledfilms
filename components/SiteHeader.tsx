@@ -12,7 +12,7 @@ export function SiteHeader() {
       </Link>
       <nav
         aria-label="Primary navigation"
-        className="flex flex-wrap gap-x-5 gap-y-3 text-[0.68rem] uppercase tracking-[0.2em] text-stone-400 sm:gap-x-7 lg:justify-end"
+        className="flex flex-wrap gap-x-5 gap-y-3 text-[0.72rem] uppercase tracking-[0.2em] text-stone-400 sm:gap-x-7 lg:justify-end"
       >
         {siteConfig.navigation.map((item) => (
           <Link
