@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { createPageMetadata } from "@/data/metadata";
 import { pages } from "@/data/site";
 
 const page = pages.contact;
@@ -31,10 +32,11 @@ const contactSections = [
   },
 ];
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createPageMetadata({
   title: page.title,
   description: page.description,
-};
+  path: "/contact",
+});
 
 export default function ContactPage() {
   return (

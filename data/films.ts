@@ -31,7 +31,7 @@ export const films: Film[] = [
       "An elderly woman in hospice refuses her fate as her children argue on how best to care for her in her final days.",
     description:
       "A chamber drama about family, dignity, and the emotional weight of care at the end of life.",
-    image: "Placeholder cinematic still of a quiet hospice room at dusk",
+    image: "Quiet hospice room at dusk",
     videoUrl: null,
     featured: true,
     externalLinks: [],
@@ -44,11 +44,11 @@ export const films: Film[] = [
     runtime: "12 min",
     roles: ["Director"],
     genre: "Drama",
-    status: "Placeholder",
+    status: "Selected Work",
     logline:
       "Two relatives sit with the silence that follows an impossible conversation.",
     description:
-      "A placeholder narrative short entry for future catalogue expansion.",
+      "A spare narrative short about distance, regret, and the words that remain unsaid.",
     image: "Two figures seated apart in a muted living room",
     videoUrl: null,
     featured: false,
@@ -62,11 +62,11 @@ export const films: Film[] = [
     runtime: "9 min",
     roles: ["Producer"],
     genre: "Narrative Short",
-    status: "Placeholder",
+    status: "Selected Work",
     logline:
       "A quiet night becomes a reckoning for someone trying not to go home.",
     description:
-      "A placeholder film entry for the selected work section.",
+      "A contained night story about avoidance, longing, and the pull of home.",
     image: "Night exterior still with a single porch light",
     videoUrl: null,
     featured: false,

@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
+import { createPageMetadata } from "@/data/metadata";
 import { pages } from "@/data/site";
 
 const page = pages.about;
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createPageMetadata({
   title: page.title,
   description: page.description,
-};
+  path: "/about",
+});
 
 export default function AboutPage() {
   return (
@@ -29,15 +31,15 @@ export default function AboutPage() {
       <section className="grid gap-12 py-16 lg:grid-cols-[0.9fr_1.1fr]">
         <div
           role="img"
-          aria-label="Placeholder portrait image of Ed Castaneda"
+          aria-label="Portrait image of Ed Castaneda"
           className="relative min-h-[34rem] overflow-hidden border border-white/10 bg-stone-950"
         >
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_45%_20%,rgba(245,245,244,0.18),transparent_18rem),linear-gradient(145deg,rgba(120,89,52,0.38),rgba(8,8,6,0.2)_42%,rgba(0,0,0,0.92))]" />
           <div className="absolute left-1/2 top-24 h-48 w-36 -translate-x-1/2 rounded-full border border-white/10 bg-stone-700/20" />
           <div className="absolute bottom-0 left-1/2 h-64 w-72 -translate-x-1/2 rounded-t-full border border-white/10 bg-black/30" />
           <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black/85 to-transparent" />
-          <span className="absolute bottom-6 left-6 right-6 text-[0.65rem] uppercase tracking-[0.22em] text-stone-400">
-            Placeholder portrait image
+          <span className="sr-only">
+            Portrait image of Ed Castaneda
           </span>
         </div>
 
