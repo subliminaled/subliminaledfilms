@@ -3,7 +3,7 @@ export const siteConfig = {
   url: "https://subliminaledfilms.com",
   description:
     "SubliminalEd Films is an independent film studio for restrained, cinematic stories in release, development, and conversation.",
-  contactEmail: "contact@subliminaledfilms.com",
+  contactEmail: "ed@subliminaledfilms.com",
   navigation: [
     { label: "Home", href: "/" },
     { label: "Films", href: "/films" },
